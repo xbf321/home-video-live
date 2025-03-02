@@ -1,0 +1,2 @@
+01 07 * * * /bin/bash /sh/start-record.sh && echo $(date +%Y-%m-%d" "%H:%M:%S) >> /var/log/cron.log
+01 10 * * * /bin/bash /sh/stop-record.sh
