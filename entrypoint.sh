@@ -1,4 +1,8 @@
 #!/bin/bash
+currentPath="$(cd "$(dirname "$0")"; pwd)"
+source ${currentPath}/sh/start-record.sh
+
+crond -b
 
 ffmpeg -i /dev/video0 \
   -video_size 1280x720 \

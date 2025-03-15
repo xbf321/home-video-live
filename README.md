@@ -11,7 +11,7 @@
 ```bash
 docker run -d \
   -e TZ=Asia/Shanghai \
-  -v /opt/x/web/home-video-live:/app \
+  -v /opt/x/web/home-video-live:/data \
   --privileged  \
   --restart unless-stopped \
   --device /dev/video0 \
